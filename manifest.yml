@@ -1,0 +1,6 @@
+---
+applications:
+- name: Heroes
+  memory: 128M
+  path: ./dist
+  buildpack: staticfile_buildpack

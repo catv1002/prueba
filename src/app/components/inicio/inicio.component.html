@@ -1,0 +1,15 @@
+<header class="container p-4 animated fadeInDownBig ">
+  <div class="container text-center" style="background-color: red;">
+    <img class="w-25 p-1 " src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/1200px-MarvelLogo.svg.png" alt="">
+  </div>
+</header>
+<div class="container">
+  <div class="d-flex align-content-start flex-wrap">
+    <div class="animated fadeInLeft" *ngFor="let datos of objects" (click)="goToObject(datos.lista,datos.url)">
+      <app-card [datos]="datos"></app-card>
+  </div>
+</div>
+</div>
+
+
+<!--app-lista *ngFor="let datos of objects" [objLista]="datos"></app-lista-->

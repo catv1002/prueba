@@ -1,0 +1,20 @@
+<div class="container animated fadeInRight">
+  <div class="row">
+    <div class="col-md-2">
+      <img [ngStyle]="{'width':'5rem'}" class="m-4" src="http://cdn.onlinewebfonts.com/svg/img_170454.png" routerLink="/" href="#">
+    </div>
+    <div class="col-md-10 d-flex align-items-center">
+      <img [ngStyle]="{'width':'15rem'}" src="{{url}}" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="d-flex align-content-start flex-wrap">
+    <div class="animated fadeInUp" *ngFor="let datos of objects">
+      <app-card [datos]="datos"></app-card>
+    </div>
+  </div>
+</div>
+
+  <!--app-lista *ngFor="let datos of objects  " [objLista]="datos" ></app-lista-->
